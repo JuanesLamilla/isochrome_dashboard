@@ -26,7 +26,7 @@ def main():
         'Select a travel speed (in km/hour).',
         0.1, 120.0)
 
-    trip_times = list(range(time_values[0], time_values[1]))
+    trip_times = list(range(time_values[0], time_values[1], 5))
 
     if st.button('Create isochrome'):
         with st.spinner("Processing data"):
